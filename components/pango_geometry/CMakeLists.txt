@@ -1,5 +1,6 @@
 get_filename_component(COMPONENT ${CMAKE_CURRENT_LIST_DIR} NAME)
 
+include_directories("/opt/homebrew/include/eigen3")
 find_package (Eigen3 REQUIRED QUIET)
 target_compile_definitions(${COMPONENT} PUBLIC HAVE_EIGEN)
 

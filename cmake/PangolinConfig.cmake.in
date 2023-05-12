@@ -11,6 +11,7 @@ SET( Pangolin_LIBRARIES    @component_list@ )
 SET( Pangolin_LIBRARY      "${Pangolin_LIBRARIES}" )
 
 include(CMakeFindDependencyMacro)
+include_directories("/opt/homebrew/include/eigen3")
 find_dependency(Eigen3)
 
 if (UNIX)

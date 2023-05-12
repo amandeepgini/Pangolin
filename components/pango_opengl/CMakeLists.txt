@@ -22,6 +22,7 @@ PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}/shaders.cpp
 )
 
+include_directories("/opt/homebrew/include/eigen3")
 find_package (Eigen3 REQUIRED QUIET)
 message(STATUS "Found Eigen: '${EIGEN3_INCLUDE_DIRS}'")
 target_compile_definitions(${COMPONENT} PUBLIC HAVE_EIGEN HAVE_GLEW)
